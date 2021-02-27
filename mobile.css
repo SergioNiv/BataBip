@@ -1,0 +1,84 @@
+:root {
+  --orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --war-black-1: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+.header {
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header img {
+  width: 151px;
+  height: 24px;
+  margin-top: 39px;
+  align-self: center;
+}
+.header--container-text {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin-top: 33px;
+  color: var(--just-white);
+  align-self: center;
+}
+.header--container-text h1 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+
+.header--container-text p {
+  margin-top: 24px;
+  color: var(--soft-orange);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+.header--container-text span {
+  width: 12px;
+  height: 7.4px;
+  display: inline-block;
+  background-image: url("./assets/icon/mdi_keyboard.svg");
+}
+
+.header--container-text a {
+  width: 229px;
+  height: 48px;
+  margin-top: 32px;
+  display: block;
+  font-size: 1.4rem;
+  padding: 12px 16px;
+  background-color: var(--off-white);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--warm-black);
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 4px;
+}
