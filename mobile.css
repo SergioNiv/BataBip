@@ -21,6 +21,7 @@ html {
   font-family: "DM Sans", sans-serif;
 }
 
+/*------------------------HEADER-------------------*/
 .header {
   background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
   position: relative;
@@ -81,4 +82,111 @@ html {
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border: none;
   border-radius: 4px;
+}
+
+/*------------------------MAIN-------------------*/
+
+.main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+}
+
+.main--section-primary {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.main--section-primary figure {
+  width: 192px;
+  height: 192px;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+
+.main--text-primary {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main--section-primary h2 {
+  margin-top: 4.4rem;
+  color: var(--warm-black);
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+.main--section-primary p {
+  margin-top: 2.4rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--grey);
+  margin-bottom: 4.8rem;
+}
+/*--TABLA--*/
+.main--table {
+  width: 20rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template: repeat(6, auto) / repeat(2, 1fr);
+  justify-items: start;
+  align-items: center;
+}
+
+.item {
+  padding: 10px 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.item1 {
+  color: #ff9536;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  grid-column: 1 / span 2;
+  padding: 10px 12px;
+}
+
+.item2 {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 500;
+  color: #b5b0ac;
+}
+
+.item3 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #757575;
+  display: flex;
+}
+
+.item span {
+  width: 4.9rem;
+  display: block;
+}
+
+.main--table img {
+  margin: 0 10px;
+}
+
+.item4 {
+  margin-top: 2.4rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  justify-self: center;
+  grid-column: 1 / span 2;
+  background-color: var(--soft-orange);
+  color: var(--war-black-1);
+  padding: 10px 12px;
+  font-family: "Inter", sans-serif;
+}
+.item4 span {
+  font-weight: bold;
 }
