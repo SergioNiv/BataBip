@@ -90,6 +90,7 @@ html {
 /*--SECCIÓN PRIMARIA--*/
 .main {
   width: 100%;
+  min-width: 320px;
   height: auto;
   background-color: var(--off-white);
 }
@@ -130,13 +131,27 @@ html {
   margin-bottom: 4.8rem;
 }
 /*--TABLA--*/
-.main--table {
-  width: 20rem;
+.main--table-container{
   margin: 0 auto;
+  display: flex;
+  height: auto;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin: 0 5rem;
+  
+
+}
+.main--table {
+  scroll-snap-align: center;
+  min-width: 20rem;
+  width: 40rem;
+  max-width: 60rem;
   display: grid;
   grid-template: repeat(6, auto) / repeat(2, 1fr);
   justify-items: start;
   align-items: center;
+  
 }
 
 .item {
@@ -146,6 +161,15 @@ html {
 
 .item1 {
   color: #ff9536;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  grid-column: 1 / span 2;
+  padding: 10px 12px;
+}
+
+.item1-2 {
+  color: #1A9AF7;
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 2.3rem;
@@ -189,7 +213,21 @@ html {
   padding: 10px 12px;
   font-family: "Inter", sans-serif;
 }
-.item4 span {
+
+.item4-2 {
+  margin-top: 2.4rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  justify-self: center;
+  grid-column: 1 / span 2;
+  background-color: #E7F5FF;
+  color: var(--war-black-1);
+  padding: 10px 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.item4,.item4-2 span {
   font-weight: bold;
 }
 
@@ -198,11 +236,12 @@ html {
 .main--secundari {
   width: 100%;
   min-width: 320px;
-  background-color: #201e1c;
   height: auto;
+  background-color: #201e1c;
   text-align: center;
   position: relative;
   margin-top: 72px;
+  padding-bottom: 1rem;
 }
 .main--batata {
   width: 4.2rem;
@@ -230,17 +269,19 @@ html {
   line-height: 1.8px;
   margin-top: 2.4rem;
   text-align: center;
+  margin-bottom: 3.2rem;
 }
 
 .main--card {
   width: 90%;
   margin: 0 auto;
-  height: auto;
+  height: 152px;
   background-color: var(--war-black-1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  margin-top: 3.2rem;
   padding: 1.6rem;
+  margin-bottom: 1.6rem;
+  
 }
 .main--card-icon {
   width: 2.4rem;
@@ -262,4 +303,190 @@ html {
   color: #808080;
   text-align: start;
   margin: 1rem 0;
+}
+
+
+/*--comodín section--*/
+
+.main--img{
+  width: 100%;
+  min-width: 320px;
+  height: 387px;
+  background-image: url("./assets/img/bitcoinbaby-X3.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.main--img h2{
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--just-white);
+  padding-top: 64px;
+}
+
+/*--Tercera sección--*/
+
+.main--tercer-section{
+  width: 100%;
+  min-width: 320px;
+  background-color: var(--off-white);
+  height: auto;
+  text-align: center;
+}
+
+.main--tercer-section .tercer--section-title{
+  margin: 0 auto;
+  width: 90%;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+  padding-top: 6.4rem;
+}
+.main--tercer-section .tercer--section-text{
+  width: 90%;
+  margin: 2.4rem auto;
+  color: #757575;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+.main--card-container{
+  margin: 0 auto;
+  min-width: 32rem;
+  padding-top: 15px;
+  display: flex;
+  height: auto;
+  gap:10px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+ 
+  
+}
+.main--card-plans{
+  scroll-snap-align: center;
+  min-width: 190px;
+  max-width: 300px;
+  width: 300px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 64px;
+  
+}
+.main--card-recomend{
+  margin: 0 auto;
+  width: 10rem;
+  height: 3.1rem;
+  font-family: "Inter", sans-serif;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #fff;
+  background-color: var(--orange);
+  padding: 1rem;
+  position: absolute;
+  top:-15px;
+  left: calc(50% - 50px);
+}
+
+.main--card-title{
+  padding-top: 4.2rem;
+  font-size: 1.4rem;
+  line-height: 1.8px;
+  color: #000;
+}
+
+.main--card-precio {
+  margin-top: 1rem;
+  font-size: 5rem;
+  line-height: 6.3rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  color: #000;
+}
+.main--card-precio span{
+  position: relative;
+  top:-30px;
+  height: 8.8rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #363636;
+}
+.main--card-text{
+  padding-top: 1rem;
+  margin: 0 auto;
+  width: 90%;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #757575;
+}
+
+.main--card-button{
+  margin-top: 1.6rem;
+  margin-bottom: 2.4rem;
+  padding: 8px 16px 12px 16px;
+  background-color: var(--off-white);
+  border: 2px solid #F7931A;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: bold;
+  color: #201E1C;
+  
+}
+
+.main--card-button span{
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("./assets/icon/arrow-right.svg");
+  position: relative;
+  top: 2.5px;
+}
+
+/*------------------------footer-------------------*/
+
+.footer{
+  width: 100%;
+  height: 150px;
+  min-width: 320px;
+  background-color: var(--orange);
+}
+
+.footer--container{
+  margin: 0 auto;
+  width: 60%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer--text{
+  width: 50;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #fff;
+  
+}
+
+.footer--text p {
+  margin: 5px 0;
+}
+
+.footer--icon{
+  width: 64px;
+  height: 50px;
+  background-image: url("./assets/icon/logo-footer.svg");
+  
 }
